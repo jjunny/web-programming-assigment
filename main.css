@@ -4,6 +4,10 @@ body {
   font-family: 'Ubuntu Condensed', sans-serif;
   margin: 0;
 }
+img {
+  display: block;
+  margin: 0 auto;
+}
 .container {
   margin: 0 auto;
   max-width: 100%;
@@ -93,6 +97,10 @@ body {
 
 #body-wrapper {
   padding: 40px 0;
+  min-height: 1000px;
+  max-height: 1000px;
+  overflow: auto;
+  background-color: #CCCCCC;
 }
 
 #footer-wrapper {
@@ -107,4 +115,21 @@ footer {
 div#clock {
   padding: 10px;
   height: 50px;
+}
+
+details {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: .5em .5em 0;
+}
+
+details p {
+  font-size: 1.5em;
+}
+
+summary {
+  font-size: 2em;
+  font-weight: bold;
+  margin: -.5em -.5em 0;
+  padding: .5em;
 }
