@@ -1,0 +1,92 @@
+body {
+  font-family: sans-serif;
+  background-color: white;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  margin: 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+@media screen and (max-width: 1680px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    width: calc(100% - 70px);
+  }
+}
+@media screen and (max-width: 980px) {
+  .container {
+    width: calc(100% - 100px);
+  }
+}
+@media screen and (max-width: 736px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+}
+.row {
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+#header-wrapper {
+  background-color: #007294;
+}
+#header {
+  position: relative;
+  box-sizing: content-box;
+  text-align: center;
+  margin: 2.5% 0 2.5% 0;
+  padding: 0 40px 0 40px;
+  border-radius: 10px;
+  border: solid 1px #006e8b;
+  box-shadow: inset 0px 0px 0px 1px #12a0bf, 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  background-color: #007b9d;
+  height: 86px;
+}
+#header h1 {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  font-size: 2.4em;
+  color: white;
+}
+#header h1 a {
+  text-decoration: none;
+  color: white;
+}
+#header nav {
+  position: absolute;
+  right: 40px;
+  top: 1px;
+  line-height: 84px;
+  font-size: 1.3em;
+  letter-spacing: -1px;
+  color: white;
+}
+#header nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 25px 0 25px;
+  outline: 0;
+  color: white;
+}
+#header nav a.current-page {
+  background-color: #007897;
+  box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.1), 0px 0px 5px 1px rgba(255, 255, 255, 0.1);
+}
+#header nav a:hover {
+  background-color: #0882a1;
+  box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.05), 0px 0px 5px 1px rgba(255, 255, 255, 0.05);
+}
+
+#main_img {
+  display: block;
+  margin: 100px auto;
+}
