@@ -22,5 +22,21 @@
   </div>
 </div>
 <img src="ciphers.png" id="main_img">
+<div id="footer-wrapper">
+  <div class="container">
+    <div class="row">
+      <footer onload="startClock()">
+        <div id="clock"></div>
+        <script>
+          let now = new Date();
+          let year = now.getFullYear();
+          let month = now.getMonth() + 1;
+          let date = now.getDate();
+          document.getElementById("clock").innerHTML = "현재 날짜 : " + year + "-" + month + "-" + date;
+        </script>
+      </footer>
+    </div>
+  </div>
+</div>
 </body>
 </html>

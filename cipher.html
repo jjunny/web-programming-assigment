@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
+<script src="main.js"></script>
 <div id="header-wrapper">
   <div class="container">
     <div class="row">
@@ -18,6 +19,31 @@
           <a href="rsa_cipher.html">RSA 암호</a>
         </nav>
       </header>
+    </div>
+  </div>
+</div>
+<div id="body-wrapper">
+  <div class="container">
+    <div class="row">
+      <iframe src="https://ko.wikipedia.org/wiki/%EC%95%94%ED%98%B8%ED%95%99" width="1200" height="1000">
+        이 브라우저는 iframe 태그를 지원하지 않습니다.
+      </iframe>
+    </div>
+  </div>
+</div>
+<div id="footer-wrapper">
+  <div class="container">
+    <div class="row">
+      <footer onload="startClock()">
+        <div id="clock"></div>
+        <script>
+          let now = new Date();
+          let year = now.getFullYear();
+          let month = now.getMonth() + 1;
+          let date = now.getDate();
+          document.getElementById("clock").innerHTML = "현재 날짜 : " + year + "-" + month + "-" + date;
+        </script>
+      </footer>
     </div>
   </div>
 </div>
