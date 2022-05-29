@@ -17,18 +17,6 @@ function change(img){
   next %= images.length;
 }
 
-function filter(){
-  let search = document.getElementById("search").value;
-  let listInner = document.getElementsByClassName("listInner");
-
-  for(let i=0;i<listInner.length;i++){
-    if (listInner[i].includes(search))
-      listInner[i].style.display = "flex";
-    else
-      listInner[i].style.display = "none";
-  }
-}
-
 let canvas, context;
 function init() {
   canvas = document.getElementById("myCanvas");
