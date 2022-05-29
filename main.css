@@ -94,6 +94,10 @@ img {
   display: block;
   margin: 100px auto;
 }
+#myCanvas {
+  display: block;
+  margin: auto;
+}
 
 #body-wrapper {
   padding: 40px 0;
@@ -110,7 +114,6 @@ footer {
   width: 100%;
   height: 100px;
   bottom: 0px;
-  position: absolute;
 }
 div#clock {
   padding: 10px;
@@ -124,12 +127,21 @@ details {
 }
 
 details p {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 summary {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   margin: -.5em -.5em 0;
   padding: .5em;
+}
+
+#btn {
+  float: right;
+}
+
+label {
+  float: right;
+  margin: 5px;
 }
